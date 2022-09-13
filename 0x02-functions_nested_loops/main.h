@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
- * main - storing code
+ * main - MAIN_H
  *
  * Description: code will be used in other tasks
  *
@@ -24,4 +24,4 @@ int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
 
-#endif /* MAIN_H */
+#endif  
