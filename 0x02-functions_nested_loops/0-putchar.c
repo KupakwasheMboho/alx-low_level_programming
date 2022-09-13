@@ -6,7 +6,7 @@
  *
  * Description: prints _putcar using putchar prototype
  *
- * Retur: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
