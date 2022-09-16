@@ -2,7 +2,9 @@
 
 /**
  * print_triangle - prints a triangle
+ *
  * @size:size parameter of triangle
+ *
  * Return: returns nothing
  */
 
@@ -12,24 +14,24 @@ void print_triangle(int size)
 
 	if (size <= 0)
 	{
-		for (inc1 = 1; inc1 <= size; inc1++)
+		_putchar('\n');
+	}
+	else
+	{
+		for (hght = 1; hght <= size; ++hght)
 		{
-			for ((inc2 = size - inc1); inc2 > 0; inc2--)
+			for (base = 1; base <= size; ++base)
 			{
-				putchar(' ');
+				if ((hght + base) <= size)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar('#');
+				}
 			}
-
-			for (inc2 = 0; inc2 < inc1; inc2++)
-			{
-				putchar('#');
-			}
-
-			if (inc1 == size)
-			{
-				continue;
-			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
-	putchar('\n');
 }
