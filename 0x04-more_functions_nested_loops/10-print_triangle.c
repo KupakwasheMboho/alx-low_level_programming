@@ -12,18 +12,25 @@ void print_triangle(int size)
 	int hght, base;
 
 	if (size <= 0)
-		_putchar('\n');
-	else
 	{
-		for (hght = 1; hght <= size; ++hght)
+		for (inc1 = 1; inc1 <= size; inc1++)
 		{
-			for (base = 1; base <= size; ++base)
+			for ((inc2 = size - inc1); inc2 > 0; inc2--)
 			{
-				if ((hght + base) <= size)
-					_putchar(' ');
-				else
-					_putchar('#');
+				putchar(' ');
 			}
+
+			for (inc2 = 0; inc2 < inc1; inc2++)
+			{
+				putchar('#');
+			}
+
+			if (inc1 == size)
+			{
+				continue;
+			}
+			putchar('\n');
 		}
 	}
+	putchar('\n');
 }
